@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- Adds Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-cover bg-center bg-no-repeat" style="background-image: url('https://i.pinimg.com/originals/db/34/d4/db34d40b271fb59477621550bf73ea0b.jpg');">
+    <div class="flex justify-center items-center min-h-screen">
+        <div id="quiz-container" class="max-w-md mx-auto p-4 bg-white rounded-lg shadow-lg mt-8">
+            <h1 class="text-2xl font-semibold mb-4" style="text-align: center;">Question:</h1>
+            <!-- This is the question -->
+            <p class="text-lg mb-4">What is the capital of France?</p>
+            <!-- User should click buttons to answer the questions -->
+            <div class="space-y-4">
+                <button class="block w-full py-2 px-4 text-white bg-blue-500 hover:bg-blue-700 rounded-lg" onclick="checkAnswers()">A. London</button>
+                <button class="block w-full py-2 px-4 text-white bg-blue-500 hover:bg-blue-700 rounded-lg" onclick="checkAnswers()">B. New York</button>
+                <button class="block w-full py-2 px-4 text-white bg-blue-500 hover:bg-blue-700 rounded-lg" onclick="checkAnswers()">C. Paris</button>
+                <button class="block w-full py-2 px-4 text-white bg-blue-500 hover:bg-blue-700 rounded-lg" onclick="checkAnswers()">D. Tokyo</button>
+            </div>
+            <!-- Button that will trigger fetchQuestions function that changes the questions  -->
+            <button class="block w-full mt-8 py-2 px-4 text-white bg-green-500 hover:bg-green-700 rounded-lg" onclick="fetchQuestions()">Next Question</button>
+        </div>
+    </div>
+    <!-- Connecting my script.js file to index.html -->
+    <script src="script.js"></script>
+</body>
+</html>
